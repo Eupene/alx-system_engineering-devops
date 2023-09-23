@@ -5,7 +5,7 @@ file { 'ect/ssh/ssh_cofig':
 	ensure => present,
 content =>"
 
-	#SSH Client Configuration
+	#SSH client configuration
 	host*
 	IdentityFile ~/.ssh/school
 	PasswordAuthentication no
