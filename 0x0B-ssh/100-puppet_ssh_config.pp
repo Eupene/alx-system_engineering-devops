@@ -3,9 +3,10 @@
 
 file { 'ect/ssh/ssh_config':
 	ensure => 'present',
-content =>
+content =>"
 	#SSH CLIENT CONFIGURATION
 	host*
 	IdentityFile ~/.ssh/school
 	PasswordAuthentication
+	",
 }
