@@ -2,11 +2,12 @@
 # Puppet script to create ssh config file
 
 file { 'ect/ssh/ssh_config':
-	ensure => 'present',
+	ensure => present,
 content =>"
-	#SSH CLIENT CONFIGURATION
+
+	#SSH Client Configuration
 	host*
 	IdentityFile ~/.ssh/school
-	PasswordAuthentication
+	PasswordAuthentication no
 	",
 }
